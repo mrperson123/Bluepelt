@@ -1,0 +1,651 @@
+*, body, html{
+    padding:0px;
+    margin:0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    line-height:20px;
+}
+
+.container{
+    width:980px;
+    margin:0 auto;
+}
+
+h1{
+    font-size:24px;
+    margin-bottom:15px;
+    font-weight:normal;
+}
+
+h6{
+    font-size:20px;
+    margin-bottom:15px;
+    font-weight:normal;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+input{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color:#009cff;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+    a:hover{
+        text-decoration:underline;
+    }
+
+.clear{
+    clear:both;
+}
+
+thead{
+    font-weight:bold;
+}
+
+.red{
+    color:#f00;
+}
+
+#main{
+    padding-bottom:130px;
+}
+
+select{
+    min-width:250px;
+}
+
+.mobile{
+    display:none;
+}
+
+/*-- HEADER --*/
+
+#header{
+    height:150px;
+    margin-bottom:20px;
+    position:relative;
+}
+
+    #header .container{
+        height:150px;
+        position:relative;
+    }
+
+    #logo{
+        display:block;
+        float:left;
+        height:130px;
+        width:142px;
+        background:url(../images/logo.png) no-repeat;
+        background-size:100%;
+    }
+    
+    #header-login{
+        float:right;
+        margin-top:5px;
+    }
+    
+        #header-login .clear{
+            text-align:right;
+        }
+    
+        #header-login input{
+            margin-bottom:9px;
+            font-size:12px;
+            float:right;
+            clear:both;
+            
+        }
+        
+        #header-login input[type='submit']{
+            font-size:12px;
+        }
+        
+        #header-login a{
+            display:inline-block;
+            font-size:12px;
+            margin-right:5px;
+        }
+        
+        .login.error{
+            float:left;
+            color:#f00;
+            font-size:12px;
+            height:40px;
+            width:250px;
+            display:none;
+        }
+        
+    #header-loggedin{
+        float:right;
+        margin-top:5px;
+        text-align:right;
+    }
+    
+nav{
+    position:absolute;
+    bottom:0px;
+    left:150px;
+}
+
+    ul#header-menu{
+        list-style:none;
+        margin:0px;
+    }
+    
+        ul#header-menu li{
+            list-style:none;
+            display:inline-block;
+            margin-right:15px;
+            position:relative;
+            padding:4px 0;
+        }
+        
+            ul#header-menu li a, ul#header-menu span{
+                font-size:16px;
+                color:#009cff;
+            }
+            
+                ul#header-menu li a:hover{
+                    text-decoration:underline;
+                }
+                
+            ul.submenu{
+                position:absolute;
+                top:25px;
+                background:#fff;
+                border:solid 1px #ccc;
+                padding:4px;
+                left:-5px;
+                display:none;
+                z-index:9999;
+            }
+            
+                ul.submenu li{
+                    display:block!important;
+                    clear:both;
+                }
+            
+            ul#header-menu li:hover ul.submenu{
+                display:block;
+            }
+
+/*-- END HEADER --*/
+
+/*-- SIGNUP --*/
+
+#signupform{
+    margin-bottom:10px;
+}
+
+    #signupform input, #forgotform input, #changeform input{
+        width:250px;
+        margin-bottom:5px;
+    }
+    
+        #signupform input[type="submit"], #forgotform input[type="submit"], #changeform input[type="submit"]{
+            width:100px;
+        }
+        
+        #signupform input[type="checkbox"], #signupform input[type="radio"]{
+            width:25px;
+        }
+    
+    #signupform textarea{
+        height:150px;
+        width:300px;
+        margin-bottom:5px;
+    }
+    
+    #signupform select{
+        margin-bottom:5px;
+    }
+       
+    .signupresult{
+        display:none;
+    }
+    
+        .signupresult.exist{
+            color:#f00;
+        }
+        
+.forgotresult{
+    display:none;
+}
+    
+/*-- END SIGNUP --*/
+
+/*-- CONTENT --*/
+
+#result{
+    font-weight:bold;
+    color:#f00;
+    margin-bottom:10px;
+}
+
+.mailing_textarea{
+    width:100%!important;
+    min-height:200px;
+}
+
+/*-- END CONTENT --*/
+
+/*-- ACTIVATE --*/
+
+.error{
+    color:#f00;
+}
+
+/*-- END ACTIVATE --*/
+
+/*-- TABLE --*/
+
+table tr td:last-child{
+    text-align:right;
+}
+
+table, tr, td, th{
+    vertical-align:top;
+}
+
+th{
+    text-align:left;
+    font-size:16px; 
+}
+
+.player{
+    max-height:20px;
+}
+
+    .session-name{
+        width:280px;
+    }
+    
+    .session-character{
+        width:200px;
+        overflow:hidden;
+        max-height:20px;
+    }
+     
+    .session-played, .session-payed{
+        width:80px;
+    }
+
+/*-- END TABLE --*/
+
+/*-- COLUMS --*/
+
+.col12 {
+	width: 100%;
+}
+
+.col11 {
+  	width: 91.53%;
+}
+.col10 {
+  	width: 83.06%;
+}
+
+.col9 {
+  	width: 74.6%;
+}
+
+.col8 {
+  	width: 66.13%;
+}
+
+.col7 {
+  	width: 57.66%;
+}
+
+.col6 {
+  	width: 49.2%;
+}
+
+.col5 {
+  	width: 40.73%;
+}
+
+.col4 {
+  	width: 32.26%;
+}
+
+.col3 {
+  	width: 23.8%;
+}
+
+.col2 {
+  	width: 15.33%;
+}
+
+.col1 {
+  	width: 6.866%;
+}
+
+.column {
+	display: block;
+	float:left;
+	margin: 0 0 0 1.6%;
+}
+
+.column:first-child{
+	margin-left:0px;
+}
+
+.row {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	overflow-y: auto;
+	font-size:20px;
+}
+
+.clear{
+    clear:both;
+}
+
+/*-- END COLUMS --*/
+
+/*-- CREATE CHARACTER --*/
+
+.giftinfo{
+	margin-bottom:50px;
+}
+
+#skills .skill:first-child .remove_skill, 
+#backgrounds .background:first-child .remove_background, 
+#gifts .gift:first-child .remove_gift, 
+#merits .merit:first-child .remove_merit,
+#flaws .flaw:first-child .remove_flaw{
+    display:none;
+}
+
+    #sharedbackgrounds{
+        margin-bottom:10px;
+    }
+
+    #sharedbackgrounds span, #sheet-wyrmtaint span{
+        display:inline-block;
+        width:150px;
+    }
+
+    .hide-text{
+        display:none;
+    }
+    
+    #skills .skill:first-child .hide-text, #backgrounds .background:first-child .hide-text{
+        display:block
+    }
+
+    .skill, .background, .merit, .flaw{
+        margin-bottom:5px;
+    }
+    
+    #add_skill, #add_background, #add_gift, #add_merit, #add_flaw{
+        margin-bottom:15px!important;
+    }
+    
+    .deleterow{
+        text-align:center;
+        font-size:20px;
+        color:#f00!important;
+    }
+    
+        .deleterow a, .remove_gift, .remove_merit, .remove_flaw{
+            color:#f00;
+            font-size:20px;
+        }
+        
+        .remove_gift{
+            margin-left:5px;
+        }
+        
+    .giftslist{
+        width:400px;
+        margin-bottom:5px!important;
+    }
+    
+    .gift{
+        margin-bottom:5px;
+    }
+    
+    .contact_nar strong{
+	    display:inline-block;
+	    width:150px;
+    }
+    
+/*-- END CREATE CHARACTER --*/
+
+/*-- SHEET --*/
+
+.sheet-part{
+    margin-bottom:15px;
+}
+
+    .attribute-focus-text{
+        font-size:12px!important;
+        width:33%;
+        display:block;
+        float:left;
+    }
+
+    #sheet-merits{
+        margin-bottom:15px;
+    }
+
+    .sheet-skill-name, .sheet-background-name, .sheet-merit-name, .sheet-flaw-name, .sheet-gift-name{
+        display:inline-block;
+        width:150px;
+    }
+    
+        .sheet-skill-specialty, .sheet-background-specialty{
+            font-style: italic;
+        }
+        
+.check_edit{
+    font-size:40px;
+    opacity:0.5;
+}
+
+    .check_edit:hover{
+        opacity:1;
+    }
+
+.decline{
+    color:#f00;
+}
+
+.approve{
+    color:#0f0;
+    margin-right:50px;
+}
+
+/*-- END SHEET --*/
+
+.hidden{
+    display:none;
+}
+
+.fa-spinner{
+    opacity: 0;
+}
+
+input[type='button']{
+    cursor:pointer!important;
+}
+
+input[type='button']:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+input[type='submit']{
+    width:auto!important;
+    display:block;
+    padding:3px 12px;
+    font-size:14px;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    input[type='submit']:hover{
+        text-decoration:underline;
+    }
+    
+    
+@media (max-width: 980px) {
+    .container{
+        width:100%;
+    }
+    
+    .col4{
+        width:100%;
+        margin:0 0 5px;
+    }
+    
+    .col3{
+        width:100%;
+        margin:0 0 3px;
+    }
+    
+    .deleterow{
+        margin-bottom:25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop{
+        display:none;
+    }
+    
+    .mobile{
+        display:block;
+    }
+    
+    ul#header-menu li{
+        display:block;
+    }
+    
+    ul.submenu{
+        position: relative;
+        top:0px;
+        left:0px;
+        width:100%;
+        border:0px;
+    }
+    
+    ul#header-menu li:hover ul.submenu{
+        display: none;
+    }
+    
+    #logo{
+        width:100px;
+        margin-right:20px;
+    }
+}
+
+
+
+@media print {
+    #header{
+        display:none;
+    }
+    
+    .print_hide{
+        display:none;
+    }
+    
+   
+    
+    .col4 {
+  	width: 32.26%;
+}
+    
+    
+    @page {
+        size: auto;   /* auto is the initial value */
+        margin: 25px;  /* this affects the margin in the printer settings */
+    }
+}
+
+/*-- MOBILE MENU --*/
+
+#mobile-menu-main{
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	background-color:rgba(0,0,0,0);
+	z-index:99997;
+	display:none;
+	-webkit-transition:background-color 1s;
+    -moz-transition:background-color 1s;
+    transition:background-color 1s;
+}
+
+	#mobile-menu-bg{
+		background:rgba(0,0,0,0.5);
+		position:fixed;
+		left:0px;
+		right:0px;
+		top:0px;
+		bottom:0px;
+		z-index:99998;
+		opacity:0;
+	}
+
+	#mobile-menu-holder{
+		position:fixed;
+		top:0px;
+		left:-250px;
+		bottom:0px;
+		width:230px;
+		background:#fff;
+		z-index:99999;
+		padding:10px 10px 50px 10px;
+		overflow-x:hidden;
+	}
+	
+		#mobile-menu{
+			width:230px;
+		}
+		
+			#mobile-menu ul li{
+				position:relative;
+				margin-bottom:5px;
+			}
+			
+
+				
+				#mobile-menu ul li.current_page_item a, #mobile-menu ul li.current-menu-parent > a{
+					color:#ca1c22!important;
+				}
+			
+			#mobile-menu ul li span.sub-open{
+				position:absolute;
+				top:-5px;
+				right:20px;
+				font-size:30px;
+				width:20px;
+				text-align:center;
+			}
+			
+			#mobile-menu ul li ul.sub-menu{
+				display:none;
+				margin-left:10px;
+				margin-top:5px;
+			}
+			
+	#mobile-menu-button{
+		font-size:40px;
+		background-size:100% 100%;
+	}
+
+/*-- END MOBILE MENU --*/

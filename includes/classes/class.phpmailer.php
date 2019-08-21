@@ -4034,39 +4034,6 @@ class PHPMailer
     
     public static function sendMail($subject, $message, $address){
         
-        $mail = new PHPMailer(); // create a new object
-        $mail->IsSMTP(); // enable SMTP
-        //$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-        $mail->SMTPAuth = true; // authentication enabled
-        $mail->SMTPSecure = "ssl"; // secure transfer enabled REQUIRED for Gmail
-        $mail->Host = "smtp.gmail.com";
-        $mail->Port = 465; // or 587
-        $mail->IsHTML(true);
-        $mail->Username = "bluepelt.nieuwsbrief1@gmail.com";
-        $mail->Password = "nieuwsbrief.bluepelt";
-        $mail->SetFrom("noreply@bluepelt.nl");
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->AddAddress($address);
-        $mail->CharSet = 'UTF-8';
-        
-        /*
-        $mail = new PHPMailer(); // create a new object
-        $mail->IsSMTP(); // enable SMTP
-        //$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-        $mail->SMTPAuth = true; // authentication enabled
-        $mail->SMTPSecure = "tlls"; // secure transfer enabled REQUIRED for Gmail
-        $mail->Host = "in-v3.mailjet.com";
-        $mail->Port = 587; // or 587
-        $mail->IsHTML(true);
-        $mail->Username = "bc36f5d6e1e349ec72b5116957cb0c0f";
-        $mail->Password = "c9338bdd20d5b99b17f61cfb732830ba";
-        $mail->SetFrom("noreply@bluepelt.nl");
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->AddAddress($address);
-        $mail->CharSet = 'UTF-8';
-        */
 
         if(!$mail->Send()) {
             return "Mailer Error: " . $mail->ErrorInfo;
